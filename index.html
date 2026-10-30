@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Avenue | Upscale Southern Restaurant in Downtown Baltimore</title>
+<meta name="description" content="The Avenue brings elevated Southern cooking, crafted cocktails and warm hospitality to 108–110 Water Street, Baltimore. Grand opening November 20. Reserve your table.">
+<link rel="canonical" href="https://avenuebaltimore.com/">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Avenue · Southern Kitchen & Social · Baltimore">
+<meta property="og:description" content="Upscale Southern, coming to Water Street. Grand opening November 20.">
+<meta property="og:url" content="https://avenuebaltimore.com/">
+<meta property="og:image" content="https://avenuebaltimore.com/images/dining.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "The Avenue",
+  "description": "Upscale Southern kitchen and social in downtown Baltimore.",
+  "url": "https://avenuebaltimore.com/",
+  "email": "info@avenuebaltimore.com",
+  "image": "https://avenuebaltimore.com/images/dining.jpg",
+  "servesCuisine": ["Southern", "Comfort Food"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "108–110 Water Street",
+    "addressLocality": "Baltimore",
+    "addressRegion": "MD",
+    "postalCode": "21202",
+    "addressCountry": "US"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Jost:wght@300..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --midnight:#1E4240; --deep:#16312F; --porcelain:#F4EFE6; --charcoal:#262626;
+  --brass:#BD9A69; --brass-light:#D2B587; --brass-ink:#7A5F38; --body-muted:#4A4038;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#FFFFFF;color:var(--charcoal);font-family:'Jost',system-ui,sans-serif;font-size:17px;line-height:1.6}
+img{max-width:100%}
+a{color:var(--midnight)}a:hover{color:var(--brass-ink)}
+.serif{font-family:'Bodoni Moda',Georgia,serif}
+.eyebrow{margin:0;font-size:12px;letter-spacing:.3em;text-transform:uppercase}
+
+/* Utility bar */
+.topbar{background:var(--deep);color:var(--porcelain);padding:10px 24px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.topbar .hl{color:var(--brass-light)}
+.topbar a{color:var(--brass-light);text-decoration:none}
+
+/* Hero */
+.hero{position:relative;min-height:820px;display:flex;flex-direction:column;overflow:hidden;color:var(--porcelain)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,30,29,.7) 0%,rgba(16,30,29,.4) 45%,rgba(16,30,29,.7) 100%)}
+.nav{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px clamp(20px,4vw,56px);border-bottom:1px solid rgba(210,181,135,.35)}
+.nav .soon{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass-light)}
+.nav-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px}
+.nav-links a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--porcelain);text-decoration:none}
+.nav-links a:hover{color:var(--brass-light)}
+.nav-links a.pill{padding:0 24px;background:var(--porcelain);border-radius:999px;color:var(--midnight);letter-spacing:.18em;font-weight:500}
+.hero-body{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:72px 24px;gap:28px}
+.hero-body h1{margin:0;line-height:0}
+.hero-body h1 img{width:min(580px,84vw);height:auto}
+.tagline{margin:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 22px;font-size:clamp(15px,1.6vw,20px);font-weight:500;letter-spacing:.42em;text-transform:uppercase;text-shadow:0 1px 12px rgba(0,0,0,.6)}
+.hero-foot{position:relative;padding:22px 24px;border-top:1px solid rgba(210,181,135,.35);text-align:center;font-size:13px;letter-spacing:.42em;text-transform:uppercase}
+
+/* Opening */
+.opening{background:var(--porcelain);padding:clamp(80px,10vw,128px) 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:26px}
+.opening .mark{width:min(260px,66vw);height:auto}
+.opening h2{margin:0;font-weight:400;font-size:clamp(38px,4.8vw,66px);line-height:1.06;color:var(--midnight);max-width:16ch}
+.opening h2 em{color:var(--brass-ink)}
+.rule{display:flex;align-items:center;gap:16px;width:min(360px,80%)}
+.rule span{flex:1;height:1px;background:var(--brass)}
+.opening p.copy{margin:0;max-width:660px;font-size:19px;line-height:1.7}
+.opening .date{margin:14px 0 0;font-size:14px;letter-spacing:.34em;text-transform:uppercase;color:var(--midnight);font-weight:500}
+.btn{display:inline-flex;align-items:center;min-height:56px;padding:0 44px;background:var(--midnight);color:var(--porcelain);border-radius:999px;text-decoration:none;font-size:15px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.btn:hover{background:var(--deep);color:var(--porcelain)}
+
+/* Pillars */
+.pillars{background:var(--midnight);color:var(--porcelain);padding:72px clamp(20px,5vw,80px)}
+.pillars-inner{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:48px 24px;justify-content:space-between}
+.pillar{flex:1 1 140px;display:flex;flex-direction:column;align-items:center;gap:18px;text-align:center}
+.pillar p{margin:0;font-size:13px;letter-spacing:.28em;text-transform:uppercase;line-height:1.7}
+
+/* Photos */
+.photos{background:var(--porcelain);padding:16px}
+.photos-inner{display:flex;flex-wrap:wrap;gap:12px}
+.photos img{flex:1 1 300px;min-width:0;aspect-ratio:4/5;height:auto;object-fit:cover;display:block}
+
+/* Footer */
+.footer{background:#FFFFFF;border-top:1px solid var(--brass);padding:72px clamp(20px,5vw,80px) 32px}
+.footer-inner{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+.footer-cols{display:flex;flex-wrap:wrap;gap:48px 56px;justify-content:space-between;align-items:flex-start}
+.footer-col{display:flex;flex-direction:column;gap:10px;font-size:16px}
+.footer-col .eyebrow{margin-bottom:6px;color:var(--brass-ink)}
+.footer a{color:var(--midnight);text-decoration:none}
+.footer a:hover{color:var(--brass-ink);text-decoration:underline}
+.footer-bottom{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;padding-top:24px;border-top:1px solid rgba(189,154,105,.5);font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#5C4F44}
+.small-btn{display:inline-flex;align-items:center;margin-top:8px;min-height:44px;padding:0 26px;background:var(--midnight);color:var(--porcelain)!important;border-radius:999px;font-size:13px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;text-decoration:none!important}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><span class="hl">Opening Friday, November 20</span> · 108–110 Water Street · Baltimore</span>
+  <a href="https://posh.vip" target="_blank" rel="noopener">Reserve for Opening Day →</a>
+</div>
+
+<header class="hero">
+  <img class="hero-bg" src="images/dining.jpg" alt="The Avenue dining room: dark wood, brass pendant lamps and white leather chairs">
+  <div class="hero-shade"></div>
+  <nav class="nav" aria-label="Main">
+    <span class="soon">Coming Soon</span>
+    <div class="nav-links">
+      <a href="https://nest-baltimore.com" target="_blank" rel="noopener">Nest Speakeasy ↗</a>
+      <a class="pill" href="https://posh.vip" target="_blank" rel="noopener">Reserve</a>
+    </div>
+  </nav>
+  <div class="hero-body">
+    <h1><img src="images/logo-porcelain.png" alt="The Avenue"></h1>
+    <p class="tagline"><span>Southern Kitchen</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#D2B587" stroke-width="1.4" aria-hidden="true"><path d="M7 1 13 7 7 13 1 7Z"/></svg><span>Social</span></p>
+  </div>
+  <div class="hero-foot">Baltimore</div>
+</header>
+
+<main>
+  <section class="opening">
+    <img class="mark" src="images/logo-midnight.png" alt="The Avenue">
+    <h2 class="serif">Upscale Southern, <em>coming to Water Street</em></h2>
+    <div class="rule" aria-hidden="true"><span></span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#BD9A69" stroke-width="1.2"><path d="M7 1 13 7 7 13 1 7Z"/></svg><span></span></div>
+    <p class="copy">The Avenue brings elevated Southern cooking, crafted cocktails and warm hospitality to downtown Baltimore. Think braised oxtail, red velvet chicken and waffles, and a bar made for staying a while.</p>
+    <p class="copy">Two floors at 108–110 Water Street: the dining room and bar upstairs, <a href="https://nest-baltimore.com" target="_blank" rel="noopener">Nest Speakeasy</a> downstairs.</p>
+    <p class="date">Grand Opening · November 20</p>
+    <a class="btn" href="https://posh.vip" target="_blank" rel="noopener">Reserve for Opening Day</a>
+  </section>
+
+  <section class="pillars" aria-label="What The Avenue stands for">
+    <div class="pillars-inner">
+      <div class="pillar">
+        <svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#D2B587" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 9c-4 6-4 14 0 21 4-7 4-15 0-21Z"/><path d="M24 30c-6-2-10-8-10-14 6 2 10 8 10 14Z"/><path d="M24 30c6-2 10-8 10-14-6 2-10 8-10 14Z"/><path d="M24 30c-8 2-14-1-17-6 6-2 13 0 17 6Z"/><path d="M24 30c8 2 14-1 17-6-6-2-13 0-17 6Z"/><path d="M24 30v9"/></svg>
+        <p>Southern<br>Hospitality</p>
+      </div>
+      <div class="pillar">
+        <svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#D2B587" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 7v9a3 3 0 0 0 6 0V7"/><path d="M19 7v34"/><path d="M30 7c4 3 5 10 5 15h-5v19"/></svg>
+        <p>Elevated<br>Comfort Food</p>
+      </div>
+      <div class="pillar">
+        <svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#D2B587" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13h28c0 8-6 12-14 12S10 21 10 13Z"/><path d="M24 25v14"/><path d="M17 39h14"/></svg>
+        <p>Social<br>Experience</p>
+      </div>
+      <div class="pillar">
+        <svg width="56" height="56" viewBox="0 0 48 48" fill="none" stroke="#D2B587" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 41C19 30 26 19 35 8"/><path d="M20 31c-4-1-7-4-7-8 4 1 7 4 7 8Z"/><path d="M25 24c4 0 8-2 9-6-4 0-8 2-9 6Z"/><path d="M29 18c-3-2-4-6-3-9 3 2 4 6 3 9Z"/><path d="M17 36c3-3 7-3 9-1-3 2-6 3-9 1Z"/></svg>
+        <p>Culture<br>&amp; Community</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="photos" aria-label="From the kitchen">
+    <div class="photos-inner">
+      <img src="images/waffles.jpg" alt="Red velvet chicken and waffles with syrup being poured" style="object-position:center top" loading="lazy">
+      <img src="images/oxtail.jpg" alt="Braised oxtail with coconut rice, sweet peppers and thyme" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-cols">
+      <div class="footer-col" style="flex:1 1 260px;align-items:flex-start;gap:18px">
+        <img src="images/logo-midnight.png" alt="The Avenue" style="width:200px;height:auto">
+        <div style="display:flex;align-items:center;gap:12px">
+          <svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#7A5F38" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 7v9a3 3 0 0 0 6 0V7"/><path d="M19 7v34"/><path d="M30 7c4 3 5 10 5 15h-5v19"/></svg>
+          <span class="eyebrow" style="color:#7A5F38">Opening November 20</span>
+        </div>
+        <p class="serif" style="margin:0;font-size:24px;line-height:1.3;color:#1E4240">Southern <em style="color:#7A5F38">Hospitality.</em></p>
+        <p style="margin:0;max-width:300px;color:#4A4038">Upscale Southern food, crafted cocktails and good company in downtown Baltimore.</p>
+      </div>
+
+      <div class="footer-col" style="flex:0 1 200px">
+        <p class="eyebrow">Address</p>
+        <p style="margin:0">108–110 Water Street<br>Baltimore, MD 21202</p>
+        <a href="https://maps.google.com/?q=108+Water+Street+Baltimore+MD+21202" target="_blank" rel="noopener" style="font-size:14px;letter-spacing:.08em">Get directions ↗</a>
+      </div>
+
+      <div class="footer-col" style="flex:0 1 200px">
+        <p class="eyebrow">Contact</p>
+        <a href="mailto:info@avenuebaltimore.com">info@avenuebaltimore.com</a>
+        <!-- PHONE: replace and uncomment when ready
+        <a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a>
+        -->
+        <a href="https://instagram.com/theavenue.bmore" target="_blank" rel="noopener">@theavenue.bmore</a>
+      </div>
+
+      <div class="footer-col" style="flex:0 1 280px;align-items:flex-start">
+        <p class="eyebrow">Subscribe</p>
+        <p style="margin:0;color:#4A4038">Sign up to hear about events, news and updates from The Avenue and our other businesses.</p>
+        <a class="small-btn" href="mailto:info@avenuebaltimore.com?subject=Subscribe%20to%20The%20Avenue%20updates">Subscribe</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Avenue · Baltimore</span>
+      <a href="https://nest-baltimore.com" target="_blank" rel="noopener">Nest Speakeasy ↗</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
