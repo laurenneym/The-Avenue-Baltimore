@@ -10,31 +10,73 @@
 <link rel="icon" type="image/png" sizes="512x512" href="images/favicon.png">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="The Avenue">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="The Avenue · Southern Kitchen & Social · Baltimore">
 <meta property="og:description" content="Upscale Southern, coming to Water Street. Grand opening November 20.">
 <meta property="og:url" content="https://avenuebaltimore.com/">
 <meta property="og:image" content="https://avenuebaltimore.com/images/dining.jpg">
+<meta property="og:image:alt" content="The Avenue dining room: dark wood, brass pendant lamps and white leather chairs">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Avenue · Southern Kitchen & Social · Baltimore">
+<meta name="twitter:description" content="Upscale Southern, coming to Water Street. Grand opening November 20.">
+<meta name="twitter:image" content="https://avenuebaltimore.com/images/dining.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "@id": "https://avenuebaltimore.com/#restaurant",
   "name": "The Avenue",
-  "description": "Upscale Southern kitchen and social in downtown Baltimore.",
+  "description": "Upscale Southern restaurant and bar in downtown Baltimore, with Nest Speakeasy downstairs.",
   "url": "https://avenuebaltimore.com/",
+  "logo": "https://avenuebaltimore.com/images/logo-midnight.png",
+  "image": [
+    "https://avenuebaltimore.com/images/dining.jpg",
+    "https://avenuebaltimore.com/images/short-rib.jpg",
+    "https://avenuebaltimore.com/images/skillet-chicken.jpg"
+  ],
   "email": "info@avenuebaltimore.com",
   "telephone": "+1-410-683-5070",
-  "sameAs": ["https://www.instagram.com/theavenuebaltimore", "https://www.facebook.com/share/1FRsYuUc5J/"],
-  "image": "https://avenuebaltimore.com/images/dining.jpg",
-  "servesCuisine": ["Southern", "Comfort Food"],
+  "servesCuisine": ["Southern", "Soul Food", "Comfort Food"],
+  "acceptsReservations": true,
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=108+Water+Street+Baltimore+MD+21202",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "108–110 Water Street",
+    "streetAddress": "108-110 Water Street",
     "addressLocality": "Baltimore",
     "addressRegion": "MD",
     "postalCode": "21202",
     "addressCountry": "US"
-  }
+  },
+  "sameAs": [
+    "https://www.instagram.com/theavenuebaltimore",
+    "https://www.facebook.com/share/1FRsYuUc5J/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "The Avenue Grand Opening",
+  "description": "Ribbon cutting, opening reception and the first supper service at The Avenue, with Nest Speakeasy opening to the public at 9 PM.",
+  "startDate": "2026-11-20T17:00:00-05:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "image": "https://avenuebaltimore.com/images/dining.jpg",
+  "location": {
+    "@type": "Place",
+    "name": "The Avenue",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "108-110 Water Street",
+      "addressLocality": "Baltimore",
+      "addressRegion": "MD",
+      "postalCode": "21202",
+      "addressCountry": "US"
+    }
+  },
+  "organizer": { "@id": "https://avenuebaltimore.com/#restaurant" }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,8 +105,8 @@ a{color:var(--midnight)}a:hover{color:var(--brass-ink)}
 
 /* Hero */
 .hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;overflow:hidden;color:var(--porcelain);background:#1a1a17}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(16,30,29,.72) 0%,rgba(16,30,29,.45) 45%,rgba(16,30,29,.72) 100%)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 50%}
+.hero-shade{position:absolute;inset:0;background:radial-gradient(ellipse 55% 45% at center,rgba(14,30,29,.7) 0%,rgba(14,30,29,.35) 60%,rgba(14,30,29,0) 100%),linear-gradient(180deg,rgba(18,14,11,.55) 0%,rgba(18,14,11,.3) 45%,rgba(18,14,11,.7) 100%)}
 .nav{position:relative;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding:24px clamp(20px,4vw,56px);border-bottom:1px solid rgba(210,181,135,.35)}
 .nav .soon{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass-light)}
 .nav-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px}
@@ -166,13 +208,13 @@ a{color:var(--midnight)}a:hover{color:var(--brass-ink)}
 </header>
 <div class="hero-frame">
 <section class="hero" aria-label="The Avenue">
-  <img class="hero-bg" src="images/dining.jpg" alt="The Avenue dining room: dark wood, brass pendant lamps and white leather chairs" fetchpriority="high">
+  <img class="hero-bg" src="images/hero-bar.jpg" alt="The Avenue bar: marble counter, cream leather barstools, backlit bottle shelves and milk-glass pendant lamps" fetchpriority="high">
   <div class="hero-shade"></div>
   <div class="hero-body">
     <h1><img src="images/logo-porcelain.png" alt="The Avenue"></h1>
-    <p class="tagline"><span>Southern Kitchen</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#D2B587" stroke-width="1.4" aria-hidden="true"><path d="M7 1 13 7 7 13 1 7Z"/></svg><span>Social</span></p>
+    <p class="tagline"><span>Southern Kitchen</span></p>
   </div>
-  <div class="hero-foot">Baltimore</div>
+  <div class="hero-foot">108–110 Water Street · Baltimore</div>
 </section>
 </div>
 
